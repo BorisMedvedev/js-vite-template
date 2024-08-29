@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="city">Выберите город</label>
+    <select id="city" name="city">
+      <option value="Москва">Москва</option>
+    </select>
+
+
+    <label for="name">Ваше имя</label>
+    <input type="text" id="name" name="name" required>
+
+
+    <label for="mobile">Номер мобильного телефона</label>
+    <input type="tel" id="mobile" name="mobile"
+      placeholder="+7 (999) 999 99 99" required>
+
+
+    <label for="landline">Номер городского телефона</label>
+    <input type="tel" id="landline" name="landline"
+      placeholder="+7 (999) 999 99 99">
+
+
+    <label for="email">Ваш email</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"
+      required>
+
+
+    <label for="parking_address">Адрес стоянки эвакуатора</label>
+    <input type="text" id="parking_address" name="parking_address" required>
+
+
+    <label for="title">Заголовок объявления</label>
+    <input type="text" id="title" name="title" maxlength="50" required>
+
+
+    <label for="description">Описание объявления</label>
+    <input type="text" id="description" name="description" maxlength="50"
+      required>
+
+
+    <label for="car_price">Легковые автомобили (рублей)</label>
+    <input type="checkbox" id="car_price" name="car_price"
+      placeholder="Услугу не оказываю">
+
+
+    <label for="motorcycle_price">Мототехника (рублей)</label>
+    <input type="checkbox" id="motorcycle_price" name="motorcycle_price"
+      placeholder="Услугу не оказываю">
+
+
+    <label for="suv_price">Внедорожник (рублей)</label>
+    <input type="checkbox" id="suv_price" name="suv_price"
+      placeholder="Услугу не оказываю">
+
+
+    <label for="minibus_price">Микроавтобус (рублей)</label>
+    <input type="checkbox" id="minibus_price" name="minibus_price"
+      placeholder="Услугу не оказываю">
+
+
+    <label for="country_rate">Загородный тариф (руб/км)</label>
+    <input type="checkbox" id="country_rate" name="country_rate"
+      placeholder="Услугу не оказываю">
+
+
+    <label for="photo">Прикрепите фотографию к объявлению</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+
+    <button type="submit">Отправить</button>
+  </form>
+</body>
+
+</html>
