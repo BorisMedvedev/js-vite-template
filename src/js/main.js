@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import '../scss/mixin.scss';
 
 const loadJsonData = async () => {
   try {
